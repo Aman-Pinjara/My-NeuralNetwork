@@ -15,7 +15,7 @@ public class NeuralNetworkT {
         //Sigmoid function for making the matrix between 0 and 1
         @Override
         public double change(double n) {
-            return 1/(1+Math.exp(-n));
+            return (1/( 1 + Math.pow(Math.E,(-1*n))));
         }
     }
     class DSigmoid implements MatrixMethod{
@@ -31,10 +31,10 @@ public class NeuralNetworkT {
     MatrixMethod dSigmoid = new DSigmoid();
 
     //Contructor for creating Neural Network
-    public NeuralNetworkT(int inputs, int hiddenLayers, int outputs){
+    public NeuralNetworkT(int inputs, int hiddenNodes, int outputs){
 
         this.inputsNodes = inputs;
-        this.hiddenNodes = hiddenLayers;
+        this.hiddenNodes = hiddenNodes;
         this.outputsNodes = outputs;
 
         weightsIH = new Matrix(hiddenNodes, inputsNodes);

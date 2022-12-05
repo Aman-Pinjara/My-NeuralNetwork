@@ -77,9 +77,7 @@ public class Matrix {
     public void multiply(Matrix n){
         for (int i = 0; i < n.data.length; i++) {
             for (int j = 0; j < data[0].length; j++) {
-                for (int k = 0; k < data[0].length; k++){
-                    data[i][j] += n.data[i][k] * data[k][j];
-                }
+                data[i][j] = n.data[i][j] * data[i][j];
             }
         }
     }
@@ -100,7 +98,7 @@ public class Matrix {
     public void randomize(){
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
-                data[i][j] = Math.random()*2-1;
+                data[i][j] = (Math.random()*2)-1;
             }
         }
     }

@@ -154,6 +154,7 @@ public class NeuralNetwork{
             Matrix weightT = Matrix.transpose(weights[i]);
 
 
+            
             //Getting the derivative of sigmoid
             Matrix gradient = Matrix.changeElements(outputsFromLayers[i], dSigmoid);
             gradient.multiply(learningRate);
