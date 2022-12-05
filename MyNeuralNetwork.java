@@ -1,8 +1,6 @@
 package neuralnetwork;
 
-public class NeuralNetwork{
-
-
+public class MyNeuralNetwork {
     int inputs; //Number of inputs for the Network
     int hiddenLayers; // Number of hidden layers 
     int outputs; // Number of outputs in the netwoek
@@ -31,7 +29,7 @@ public class NeuralNetwork{
     MatrixMethod dSigmoid = new DSigmoid();
 
     //Contructor for creating Neural Network
-    public NeuralNetwork(int inputs, int hiddenLayers, int outputs){
+    public MyNeuralNetwork(int inputs, int hiddenLayers, int outputs){
 
         this.inputs = inputs;
         this.hiddenLayers = hiddenLayers;
@@ -201,5 +199,4 @@ public class NeuralNetwork{
 
         return prediction.toArray();
     }
-
 }
