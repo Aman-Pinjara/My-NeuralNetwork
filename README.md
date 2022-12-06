@@ -16,9 +16,8 @@ My own implementation of a neural Network.
     2. Desired Number of Hidden layers.
     3. Desired Number of Outputs.
 3. Call the function `objectName.init()`.
-4. You need to provide Number of hidden nodes for all the hidden layers specified in the form of an array.
-OR.
-4. You need to provide an array of weight matrix and an array of bias matrix for all the hidden layers and the outputs layer.
+4. You need to provide Number of hidden nodes for all the hidden layers specified in the form of an array 
+OR  You need to provide an array of weight matrix and an array of bias matrix for all the hidden layers and the outputs layer.
 
 ## How to train a model and get predictions?
 
